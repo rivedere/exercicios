@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha calculadora</title>
+</head>
+<body>
+    <h1>Minha calculadora</h1>
+    
+    
+    Primeiro número<br />
+    <input id="n1" type="number" /><br />
+    Segundo número </br>
+    <input id="n2" type="number" /><br /><br />
+    <button onclick="Somar()">Somar</button>
+    <button onclick="Subtrair()">Subtrair</button>
+    <button onclick="Multiplicar()">Multiplicar</button>
+    <button onclick="Dividir()">Dividir</button>
+    <br /><br />
+    O resultado é <span></span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+
+        function Somar() {
+            resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+        }
+        function Subtrair() {
+            resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+        }
+        function Multiplicar() {
+            resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+        function Dividir() {
+            resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+        }
+    </script>
+  // document.querySelector meio que serve pra selecionar algo
+      innerHTM serve para obter o conteúdo no html 
+</body>
+</html>
