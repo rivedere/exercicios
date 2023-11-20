@@ -5,4 +5,13 @@ function idade() {
       return 28;
     }
   }
-  
+
+
+//correcao
+const somaCaracteres = (args) =>
+{
+    return args.length;
+}
+
+const totalLetras = somaCaracteres("Tiago"); 
+console.log(totalLetras); // 5
