@@ -7,12 +7,16 @@
 </head>
    html simples
 <body>
-    <br /> <button onclick="botao()">botão</button> 
+    <button class="btn-press">Me Aperte!!!</button>
+    
+    
     <script>
-        function botao() {
-             return console.log('te amo');
+        const btn = document.querySelector(".btn-press");
 
-        }
+        btn.addEventListener('click', () =>                     
+        {
+            window.alert('você me pertou ( ͡o ͜ʖ ͡o)');        
+        })
     </script>
 </body>
 </html>
